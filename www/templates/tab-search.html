@@ -1,0 +1,17 @@
+<ion-view view-title="WordGame">
+  <ion-content class="padding">
+
+        <form ng-submit="search(word)">
+            <label class="item item-input">
+                <i class="icon ion-search placeholder-icon"></i>
+                <input ng-model="word" type="text" placeholder="Search">
+            </label>
+        </form>
+
+        <div class="list card" ng-show="translation" >
+            <div class="item item-divider"> {{ word }}</div>
+            <div class="item item-body"> Translation: {{ translation }}</div>
+        </div>
+
+  </ion-content>
+</ion-view>
